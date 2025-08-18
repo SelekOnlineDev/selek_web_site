@@ -24,7 +24,10 @@ export const transporter = nodemailer.createTransport({
 
 // Middleware
 app.use(cors({
-  origin: "http://localhost:5173",
+  origin: [
+    "http://localhost:5173",
+    "https://selek.site"
+  ],
   methods: ["GET", "POST", "PUT"],
   credentials: true
 }));
