@@ -10,9 +10,17 @@ i18n
       en: { translation: en },
       lt: { translation: lt },
     },
-    lng: "en",
+    lng: "en",            // default kalba
     fallbackLng: "en",
     interpolation: { escapeValue: false },
   });
+
+// iškart nustatome lang pagal pradinę kalbą
+document.documentElement.setAttribute("lang", i18n.language);
+
+// atnaujiname kai vartotojas keičia kalbą
+i18n.on("languageChanged", (lng) => {
+  document.documentElement.setAttribute("lang", lng);
+});
 
 export default i18n;

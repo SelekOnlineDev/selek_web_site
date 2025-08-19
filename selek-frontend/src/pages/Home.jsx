@@ -1,7 +1,9 @@
 import { useEffect, useRef } from "react";
 import styled, { keyframes } from "styled-components";
+import { useTranslation } from "react-i18next";
 
 export default function Home() {
+  const { t } = useTranslation();
   const canvasRef = useRef(null);
 
   useEffect(() => {
@@ -50,15 +52,12 @@ export default function Home() {
   }, []);
 
   return (
-    <HomeWrapper>
+    <HomeWrapper id="home">
       <MatrixCanvas ref={canvasRef} />
       <HeroContent>
-        <h1>Crafting Digital Excellence</h1>
-        <p>
-          Your main terminal for professional web development services. We build pixel-perfect solutions in a retro style.
-          From command-line interfaces to full applications - we turn your vision into reality.
-        </p>
-        <QuoteButton href="#contacts">Contact Us</QuoteButton>
+        <h1>{t("home.title")}</h1>
+        <p>{t("home.description")}</p>
+        <QuoteButton href="#contacts">{t("home.cta")}</QuoteButton>
       </HeroContent>
     </HomeWrapper>
   );
@@ -95,7 +94,7 @@ const HeroContent = styled.div`
   position: relative;
   z-index: 1;
   color: ${retroGreen};
-  font-family: 'Pixelion', 'Orbitron', monospace;
+  font-family: inherit;
   text-align: center;
   padding: 3.5rem 1.5rem;
   min-width: 300px;
@@ -122,7 +121,7 @@ const HeroContent = styled.div`
     display: none;
   }
 
-  @media (max-width: 658px) {
+  @media (max-width: 758px) {
     a {
       display: inline-block;
     }
@@ -138,7 +137,7 @@ const QuoteButton = styled.a`
   color: ${retroGreen};
   padding: 10px 15px;
   font-weight: bold;
-  font-family: "Orbitron", monospace;
+  font-family: inherit;
   text-decoration: none;
   cursor: pointer;
   transition: background 0.2s ease-in-out;

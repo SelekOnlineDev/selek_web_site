@@ -1,10 +1,15 @@
 import styled from "styled-components";
+import { useTranslation } from "react-i18next";
 
 export default function Footer() {
+  const { t } = useTranslation();
+
   return (
     <FooterWrapper>
       <FooterContent>
-        <p>© {new Date().getFullYear()} Digital Excellence. All rights reserved.</p>
+        <p>
+          © {new Date().getFullYear()} {t("footer.company")}. {t("footer.rights")}
+        </p>
       </FooterContent>
     </FooterWrapper>
   );
@@ -28,7 +33,7 @@ const FooterContent = styled.div`
   height: 55px;
   color: #8dfba4;
   text-align: center;
-  font-family: 'Pixelion', 'Orbitron', monospace;
+  font-family: inherit;
   font-size: 0.9rem;
 
   @media (max-width: 480px) {

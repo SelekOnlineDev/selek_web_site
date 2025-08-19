@@ -1,6 +1,7 @@
+// src/styles/GlobalStyles.js
 import { createGlobalStyle } from "styled-components";
 
-const Global = createGlobalStyle`
+const GlobalStyles = createGlobalStyle`
   :root {
     --retro-green: #8DFBA4;
     --header-height: 65px;
@@ -10,9 +11,19 @@ const Global = createGlobalStyle`
 
   html, body, #root { height: 100%; background: #000; }
 
+  /* ✅ Šrifto valdymas vienoje vietoje */
+  html[lang="en"] body,
+  body.lang-en {
+    font-family: "Orbitron", sans-serif;
+  }
+
+  html[lang="lt"] body,
+  body.lang-lt {
+    font-family: "Audiowide", cursive, system-ui, sans-serif;
+  }
+
   body {
     color: var(--retro-green);
-    font-family: 'Orbitron', monospace, system-ui;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     display: flex;
@@ -29,10 +40,11 @@ const Global = createGlobalStyle`
 
   a { color: var(--retro-green); text-decoration: none; }
 
-  button, input, select {
+  /* Viskas paveldi šriftą iš body */
+  button, input, select, textarea {
     font-family: inherit;
     border-radius: 8px;
   }
 `;
 
-export default Global;
+export default GlobalStyles;

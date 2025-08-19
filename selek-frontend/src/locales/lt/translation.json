@@ -5,5 +5,132 @@
     "offers": "Pasiūlymai",
     "projects": "Projektai",
     "contacts": "Kontaktai"
+  },
+  "home": {
+    "title": "Skaitmeninė Kūryba",
+    "description": "Jūsų pagrindinis terminalas profesionalioms interneto kūrimo paslaugoms. Kuriame preciziškus sprendimus retro stiliumi. Nuo komandinių eilučių sąsajų iki pilnų aplikacijų - paversime jūsų viziją realybe.",
+    "cta": "SUSISIEKITE"
+  },
+  "services": {
+    "title": "Paslaugos",
+    "webdev": {
+      "title": "Svetainių Kūrimas Ir Programavimas",
+      "desc": "Individualios svetainės sukurtos naudojant modernias technologijas, tokias kaip React, HTML, CSS, JavaScript ar TypeScript. Nuo statinių puslapių iki pilnų aplikacijų - viskas tiksliai ir našiai."
+    },
+    "frontend": {
+      "title": "Frontend Kūrimas Ir UI/UX Dizainas",
+      "desc": "Interaktyvios ir reaguojančios sąsajos su retro terminalo stiliumi. Pikselių tikslumu sukurtos, kad įtrauktų vartotojus.",
+      "stack": {
+        "responsive": "Prisitaikantis Dizainas",
+        "retro": "Retro Stilius"
+      }
+    },
+    "backend": {
+      "title": "Backend Kūrimas",
+      "desc": "Patikimi serverių sprendimai su duomenų bazių integracija ir API kūrimu. Svetainių talpinimas mokamuose ir nemokamuose serveriuose."
+    },
+    "mobile": {
+      "title": "Mobile-First Dizainas",
+      "desc": "Svetainės optimizuotos mobiliesiems įrenginiams su patogiomis sąsajomis. Greitos ir pritaikytos bet kokiam ekranui.",
+      "stack": {
+        "responsive": "Prisitaikantis Dizainas",
+        "optimization": "Mobilioji Optimizacija"
+      }
+    },
+    "performance": {
+      "title": "Našumo Optimizavimas",
+      "desc": "Greitai įkeliamos svetainės su optimizuotu kodu ir šiuolaikinėmis praktikomis.",
+      "stack": {
+        "tuning": "Našumo Derinimas",
+        "optimization": "Kodo Optimizacija"
+      }
+    },
+    "design": {
+      "title": "Logotipų Kūrimas Ir Dizainas",
+      "desc": "Profesionalus logotipų kūrimas ir prekinio ženklo identiteto formavimas.",
+      "stack": {
+        "logo": "Logotipų Dizainas",
+        "brand": "Prekinio Ženklo Identitetas",
+        "visual": "Vizualinis Dizainas",
+        "ai": "DI Dizainas"
+      }
+    }
+  },
+  "offers": {
+    "title": "Pasiūlymai",
+    "quoteBtn": "GAUTI PASIŪLYMĄ",
+    "packages": [
+      {
+        "title": "Pagrindinis Svetainės Paketas",
+        "price": "",
+        "description": "Interneto svetainės ir mažiems verslams ir startuoliams ir asmeniniams projektams su retro stiliumi ir moderniu funkcionalumu.",
+        "features": [
+          "5-10 puslapių svetainė",
+          "Prisitaikantis dizainas",
+          "Pagrindinė SEO optimizacija",
+          "Kontaktų formos integracija",
+          "1-2 mėnesių palaikymas po paleidimo",
+          "Retro dizaino elementai"
+        ]
+      },
+      {
+        "title": "Verslo Svetainės Sprendimas",
+        "price": "",
+        "description": "Išsamus sprendimas augančioms įmonėms ar asmeniniams projektams, kuriems reikia dinaminio turinio.",
+        "features": [
+          "10-20 puslapių svetainė",
+          "Pažangios SEO strategijos",
+          "Socialinių tinklų integracija",
+          "3 mėnesių palaikymas ir priežiūra",
+          "Analitikos ir ataskaitų paruošimas",
+          "Retro dizainas nemokamai"
+        ]
+      },
+      {
+        "title": "Elektroninės Parduotuvės Platforma",
+        "price": "",
+        "description": "Pilnai funkcionuojanti internetinė parduotuvė su saugiu mokėjimų apdorojimu.",
+        "features": [
+          "Produktų katalogo valdymas",
+          "Pirkinių krepšelio funkcionalumas",
+          "Mokėjimo integracija",
+          "Užsakymų ir atsargų valdymas",
+          "Klientų paskyrų sistemų valdymas",
+          "3-6 mėnesių prioritetinis palaikymas ir priežiūra"
+        ]
+      },
+      {
+        "title": "Individuali Žiniatinklio Aplikacija",
+        "price": "",
+        "description": "Individualus programinės įrangos kūrimas unikaliems verslo ir asmeninimas poreikiams.",
+        "features": [
+          "Specializuotas funkcionalumas",
+          "Sudėtinga duomenų bazės architektūra",
+          "Saugus vartotojų autentifikavimas",
+          "Intuityvi administratoriaus sąsaja",
+          "API kūrimas ir integracija",
+          "Nuolatinė priežiūra ir atnaujinimai"
+        ]
+      }
+    ]
+  },
+  "contacts": {
+    "pageTitle": "Kontaktai",
+    "contactUs": "Susisiekite",
+    "intro": "Pasiruošę įgyvendinti savo projektą? Parašykite mums žinutę ir paversime jūsų viziją skaitmeniniu kūriniu.",
+    "address": "Lietuva, Europa, Pasaulis",
+    "followUs": "Sekite Mus",
+    "sendMessage": "Siųsti Žinutę",
+    "name": "Jūsų Vardas",
+    "email": "Jūsų El. Paštas",
+    "subject": "Tema",
+    "message": "Jūsų Žinutė",
+    "transmit": "IŠSIŲSTI DUOMENIS",
+    "success": "Žinutė sėkmingai išsiųsta!",
+    "error": "Klaida siunčiant žinutę"
+  },
+  "footer": {
+    "company": "Selek. Skaitmeniniai Kūriniai",
+    "rights": "Visos teisės saugomos."
   }
 }

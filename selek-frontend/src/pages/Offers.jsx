@@ -1,27 +1,30 @@
 import React from "react";
 import styled, { keyframes } from "styled-components";
 import MatrixBackground from "../components/atoms/MatrixBackground";
+import { useTranslation } from "react-i18next";
 
 const retroGreen = "#8dfba4";
 
 export default function Offers() {
+  const { t } = useTranslation();
+
   return (
     <ServicesWrapper>
       <MatrixBackground />
       <Content>
-        <Title>Offers</Title>
+        <Title>{t("offers.title")}</Title>
         <Cards>
-          {offersData.map((offer, index) => (
+          {t("offers.packages", { returnObjects: true }).map((offer, index) => (
             <Card key={index}>
               <CardTitle>{offer.title}</CardTitle>
               <Price>{offer.price}</Price>
               <CardDesc>{offer.description}</CardDesc>
               <ul>
                 {offer.features.map((feature, idx) => (
-                  <li key={idx}> {feature}</li>
+                  <li key={idx}>{feature}</li>
                 ))}
               </ul>
-              <QuoteButton href="#contacts">REQUEST QUOTE</QuoteButton>
+              <QuoteButton href="#contacts">{t("offers.quoteBtn")}</QuoteButton>
             </Card>
           ))}
         </Cards>
@@ -29,65 +32,6 @@ export default function Offers() {
     </ServicesWrapper>
   );
 }
-
-const offersData = [
-  {
-    title: "Basic Website Package",
-    price: " ",
-    description: 
-      "Essential web presence for startups and personal projects in retro style and modern functionality.",
-    features: [
-      "5-10 pages website",
-      "Responsive design",
-      "Basic SEO optimization",
-      "Contact form integration",
-      "1-2 month post-launch support",
-      "Retro design elements",
-    ],
-  },
-  {
-    title: "Business Website Solution",
-    price: " ",
-    description:
-      "Comprehensive solution for growing personal or businesses needing dynamic content.",
-    features: [
-      "10-20 pages website",
-      "Advanced SEO strategies",
-      "Social media integration",
-      "3 months dedicated support",
-      "Analytics and reporting setup",
-      "Retro design for free",
-    ],
-  },
-  {
-    title: "E-commerce Platform",
-    price: " ",
-    description:
-      "Full-featured online store with secure payment processing.",
-    features: [
-      "Product catalog management",
-      "Shopping cart functionality",
-      "Payment gateway integration",
-      "Order and inventory management",
-      "Customer account system",
-      "3-6 months priority support",
-    ],
-  },
-  {
-    title: "Custom Web Application",
-    price: " ",
-    description:
-      "Tailored software development for unique business requirements.",
-    features: [
-      "Bespoke functionality",
-      "Complex database architecture",
-      "Secure user authentication",
-      "Intuitive admin panel",
-      "API development and integration",
-      "Ongoing maintenance and updates",
-    ],
-  },
-];
 
 // Animation for flickering text effect
 const flicker = keyframes`
@@ -115,8 +59,8 @@ const Content = styled.div`
 `;
 
 const Title = styled.h2`
-  font-family: "Pixelion", "Orbitron", monospace;
-  color: var(--retro-green);
+  font-family: inherit;
+  color: ${retroGreen};
   text-shadow: 0 0 10px ${retroGreen};
   font-size: clamp(1.6rem, 3.5vw, 2.6rem);
   margin-bottom: 1.5rem;
@@ -138,8 +82,8 @@ const Card = styled.article`
   border-radius: 12px;
   padding: 1.25rem;
   border: 2px solid ${retroGreen};
-  color: var(--retro-green);
-  font-family: "Pixelion", "Orbitron", monospace;
+  color: ${retroGreen};
+  font-family: inherit;
   text-align: left;
   display: flex;
   flex-direction: column;
@@ -187,10 +131,10 @@ const QuoteButton = styled.a`
   background: transparent;
   border: 2px solid ${retroGreen};
   border-radius: 8px; 
-  color: var(--retro-green);
+  color: ${retroGreen};
   padding: 10px 15px;
   font-weight: bold;
-  font-family: "Orbitron", monospace;
+  font-family: inherit;
   text-decoration: none;
   cursor: pointer;
   transition: background 0.2s ease-in-out;
@@ -213,5 +157,3 @@ const QuoteButton = styled.a`
     box-shadow: 0 0 5px ${retroGreen}, 0 0 5px ${retroGreen};
   }
 `;
-
-

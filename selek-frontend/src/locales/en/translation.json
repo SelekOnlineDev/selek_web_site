@@ -5,5 +5,132 @@
     "offers": "Offers",
     "projects": "Projects",
     "contacts": "Contacts"
+  },
+  "home": {
+    "title": "Crafting Digital Excellence",
+    "description": "Your main terminal for professional web development services. We build pixel-perfect solutions in a retro style. From command-line interfaces to full applications - we turn your vision into reality.",
+    "cta": "Contact Us"
+  },
+  "services": {
+    "title": "Services",
+    "webdev": {
+      "title": "Website Design & Development",
+      "desc": "Custom websites built with modern technologies like React, HTML, CSS, JavaScript or TypeScript. From static websites to full-stack applications, we code with precision and performance in mind."
+    },
+    "frontend": {
+      "title": "Frontend Development & UI/UX Design",
+      "desc": "Interactive and responsive user interfaces with a retro terminal feel. Pixel-perfect, designed to engage your users.",
+      "stack": {
+        "responsive": "Responsive Design",
+        "retro": "Retro Style"
+      }
+    },
+    "backend": {
+      "title": "Backend Development",
+      "desc": "Robust server-side solutions with database integration and API development. Hosting websites on paid and free servers."
+    },
+    "mobile": {
+      "title": "Mobile-First Design",
+      "desc": "Websites optimized for mobile devices with touch-friendly interfaces, responsive and fast.",
+      "stack": {
+        "responsive": "Responsive Design",
+        "optimization": "Mobile Optimization"
+      }
+    },
+    "performance": {
+      "title": "Performance Optimization",
+      "desc": "Fast-loading websites with optimized code and modern practices.",
+      "stack": {
+        "tuning": "Performance Tuning",
+        "optimization": "Code Optimization"
+      }
+    },
+    "design": {
+      "title": "Logo Creation & Design",
+      "desc": "Professional logo design and brand identity creation.",
+      "stack": {
+        "logo": "Logo Design",
+        "brand": "Brand Identity",
+        "visual": "Visual Design",
+        "ai": "AI Design"
+      }
+    }
+  },
+  "offers": {
+    "title": "Offers",
+    "quoteBtn": "REQUEST QUOTE",
+    "packages": [
+      {
+        "title": "Basic Website Package",
+        "price": "",
+        "description": "Essential web presence for startups and personal projects in retro style and modern functionality.",
+        "features": [
+          "5-10 pages website",
+          "Responsive design",
+          "Basic SEO optimization",
+          "Contact form integration",
+          "1-2 month post-launch support",
+          "Retro design elements"
+        ]
+      },
+      {
+        "title": "Business Website Solution",
+        "price": "",
+        "description": "Comprehensive solution for growing businesses needing dynamic content.",
+        "features": [
+          "10-20 pages website",
+          "Advanced SEO strategies",
+          "Social media integration",
+          "3 months dedicated support",
+          "Analytics and reporting setup",
+          "Retro design for free"
+        ]
+      },
+      {
+        "title": "E-commerce Platform",
+        "price": "",
+        "description": "Full-featured online store with secure payment processing.",
+        "features": [
+          "Product catalog management",
+          "Shopping cart functionality",
+          "Payment gateway integration",
+          "Order and inventory management",
+          "Customer account system",
+          "3-6 months priority support"
+        ]
+      },
+      {
+        "title": "Custom Web Application",
+        "price": "",
+        "description": "Tailored software development for unique business and personal requirements.",
+        "features": [
+          "Bespoke functionality",
+          "Complex database architecture",
+          "Secure user authentication",
+          "Intuitive admin panel",
+          "API development and integration",
+          "Ongoing maintenance and updates"
+        ]
+      }
+    ]
+  },
+  "contacts": {
+    "pageTitle": "Contacts",
+    "contactUs": "Contact Us",
+    "intro": "Ready to execute your project? Send us a message and let's compile your vision into a digital masterpiece.",
+    "address": "Lithuania, Europe, World",
+    "followUs": "Follow Us",
+    "sendMessage": "Send Message",
+    "name": "Your Name",
+    "email": "Your Email",
+    "subject": "Subject",
+    "message": "Your Message",
+    "transmit": "TRANSMIT DATA",
+    "success": "Message sent successfully!",
+    "error": "Error sending message"
+  },
+  "footer": {
+    "company": "Selek. Digital Excellence",
+    "rights": "All rights reserved."
   }
 }

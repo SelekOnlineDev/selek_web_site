@@ -1,6 +1,6 @@
 import styled from "styled-components";
-import { useTranslation } from "react-i18next";
 import { useState } from "react";
+import { useTranslation } from "react-i18next";
 import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from "@mui/icons-material/Close";
 
@@ -24,7 +24,7 @@ const Nav = styled.nav`
   justify-content: space-between;
   align-items: center;
   padding: 0.8rem 1.5rem;
-  font-family: 'Pixelion', 'Orbitron', monospace;
+  font-family: inherit;
 
   h1 { 
     font-size: 1.5rem; 
@@ -38,18 +38,22 @@ const Nav = styled.nav`
     list-style: none;
     gap: 1rem;
 
-    @media (max-width: 658px) {
-      display: none;
+    @media (max-width: 758px) {
       flex-direction: column;
-      position: absolute;
-      top: 60px;
+      position: fixed;
+      top: 90px;
       right: 0;
       background: rgba(0, 0, 0, 0.9);
-      padding: 1rem;
+      padding: 1.25rem;
       width: 200px;
       border-left: 2px solid #8dfba4;
+      transform: translateX(100%) scale(1.15);
+      opacity: 0;
+      transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
     }
-    &.open { display: flex; }
+    &.open { 
+      transform: translateX(0) scale(1.15);
+      opacity: 1; }
   }
 
   li a { 
@@ -69,7 +73,7 @@ const Nav = styled.nav`
       background: rgba(0, 0, 0, 0.4);
       border: 1px solid #8dfba4;
       color: #8dfba4;
-      font-family: 'Pixelion', 'Orbitron', monospace;
+      font-family: inherit;
       padding: 0.3rem 0.6rem;
       cursor: pointer;
       transition: background 0.2s ease-in-out;
@@ -80,14 +84,14 @@ const Nav = styled.nav`
   }
 
   .desktop-only { 
-    @media (max-width: 658px) { display: none; } 
+    @media (max-width: 758px) { display: none; } 
   }
 
   .mobile-container {
     display: none; 
     align-items: center; 
     gap: 0.5rem;
-    @media (max-width: 658px) { display: flex; }
+    @media (max-width: 758px) { display: flex; }
   }
 
   .menu-icon {
@@ -95,7 +99,7 @@ const Nav = styled.nav`
     color: #8dfba4; 
     font-size: 2rem;
     cursor: pointer;
-    @media (max-width: 658px) { display: block; }
+    @media (max-width: 758px) { display: block; }
   }
 `;
 
@@ -123,12 +127,12 @@ export default function Header() {
           <li><a onClick={() => scrollToSection("services")}>{t("nav.services")}</a></li>
           <li><a onClick={() => scrollToSection("offers")}>{t("nav.offers")}</a></li>
           <li>
-              <a 
+            <a 
               href="https://github.com/SelekOnlineDev/" 
               target="_blank" 
               rel="noopener noreferrer">
               {t("nav.projects")}
-              </a>
+            </a>
           </li>
           <li><a onClick={() => scrollToSection("contacts")}>{t("nav.contacts")}</a></li>
         </ul>

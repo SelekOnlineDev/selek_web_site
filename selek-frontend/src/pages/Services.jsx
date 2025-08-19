@@ -1,5 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 import styled, { keyframes } from "styled-components";
+import { useTranslation } from "react-i18next";
 import {
   FaGlobe,
   FaLaptopCode,
@@ -84,48 +85,44 @@ const MatrixBackground = ({ color = "var(--retro-green)" }) => {
 };
 
 export default function Services() {
+  const { t } = useTranslation();
+
   const services = [
     {
       icon: <FaGlobe />,
-      title: "Website Design & Development",
-      desc:
-        "Custom websites built with modern technologies like React, HTML, CSS, JavaScript or TypeScript. From static    websites to full-stack applications, we code with precision and performance in mind",
+      title: t("services.webdev.title"),
+      desc: t("services.webdev.desc"),
       stack: ["ReactJS", "NodeJS", "HTML", "CSS", "JavaScript", "TypeScript"],
     },
     {
       icon: <FaLaptopCode />,
-      title: "Frontend Development & UI/UX Design",
-      desc:
-        "Interactive and responsive user interfaces that work seamlessly across devices, with a classic terminal feel and retro design. Perfectly pixel-perfect, designed to engage and delight your users.",
-      stack: ["ReactJS", "TypeScript", "Tailwind CSS", "Responsive Design"],
+      title: t("services.frontend.title"),
+      desc: t("services.frontend.desc"),
+      stack: ["ReactJS", "TypeScript", "Tailwind CSS", t("services.frontend.stack.responsive"), t("services.frontend.stack.retro")],
     },
     {
       icon: <FaDatabase />,
-      title: "Backend Development",
-      desc:
-        "Robust server-side solutions with database integration and API development, ensuring your data is always online. Hosting websites on paid and free servers.",
+      title: t("services.backend.title"),
+      desc: t("services.backend.desc"),
       stack: ["NodeJS", "SQL", "NoSQL", "REST APIs", "ExpressJS"],
     },
     {
       icon: <FaMobileAlt />,
-      title: "Mobile-First Design",
-      desc:
-        "Websites optimized for mobile devices with touch-friendly interfaces, designed to look great on any screen, old or new. Responsive, fast, and mobile-friendly apps that work seamlessly on any device.",
-      stack: ["Responsive Design", "PWA", "Mobile Optimization", "App Dev"],
+      title: t("services.mobile.title"),
+      desc: t("services.mobile.desc"),
+      stack: [t("services.mobile.stack.responsive"), "PWA", t("services.mobile.stack.optimization"), "App Dev"],
     },
     {
       icon: <FaBolt />,
-      title: "Performance Optimization",
-      desc:
-        "Fast-loading websites with optimized code and modern development practices, ensuring maximum efficiency.",
-      stack: ["Performance Tuning", "SEO", "Code Optimization"],
+      title: t("services.performance.title"),
+      desc: t("services.performance.desc"),
+      stack: [t("services.performance.stack.tuning"), "SEO", t("services.performance.stack.optimization")],
     },
     {
       icon: <FaPalette />,
-      title: "Logo Creation & Design",
-      desc:
-        "Professional logo design and brand identity creation, design development.",
-      stack: ["Logo Design", "Brand Identity", "Visual Design", "AI Design"],
+      title: t("services.design.title"),
+      desc: t("services.design.desc"),
+      stack: [t("services.design.stack.logo"), t("services.design.stack.brand"), t("services.design.stack.visual"), t("services.design.stack.ai")],
     },
   ];
 
@@ -133,7 +130,7 @@ export default function Services() {
     <ServicesWrapper id="services">
       <MatrixBackground />
       <Content>
-        <Title>Services</Title>
+        <Title>{t("services.title")}</Title>
 
         <Cards>
           {services.map((s, idx) => (
@@ -156,7 +153,6 @@ export default function Services() {
 }
 
 /* STYLES */
-// Animation for flickering text effect
 const flicker = keyframes`
   0%, 18%, 22%, 25%, 53%, 57%, 100% { text-shadow: 0 0 10px var(--retro-green); }
   20%, 24%, 55% { text-shadow: none; }
@@ -182,7 +178,7 @@ const Content = styled.div`
 `;
 
 const Title = styled.h2`
-  font-family: "Pixelion", "Orbitron", monospace;
+  font-family: inherit;
   color: var(--retro-green);
   text-shadow: 0 0 10px var(--retro-green);
   font-size: clamp(1.6rem, 3.5vw, 2.6rem);
@@ -202,7 +198,7 @@ const Card = styled.article`
   padding: 1.25rem;
   border: 2px solid var(--retro-green);
   color: var(--retro-green);
-  font-family: "Pixelion", "Orbitron", monospace;
+  font-family: inherit;
   text-align: left;
   display: flex;
   flex-direction: column;
