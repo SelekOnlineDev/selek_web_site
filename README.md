@@ -25,7 +25,7 @@ Selek is an innovative **full-stack web solutions platform**, based on modern te
 * **User-friendly, admin-safe** - the form works personally, and the data - reliably.
 * **City forward** - modern architecture, reliable technology ecosystem and visual uniqueness.
 
-### Sophisticated summaries for badges:
+### Summaries:
 
 **Frontend** : ReactJS - fast, responsive, SPA functionality
 **Backend** : Node.js + Express - reliable data processing, communication, logic
@@ -62,7 +62,7 @@ Selek - tai inovatyvi **full-stack web sprendimų platforma**, besiremianti mode
 * **Naudotojui draugiška, administratoriaus saugi** - forma veikia asmeniškai, o duomenys - patikimai.
 * **Miestas į priekį** - moderni architektūra, patikima technologijų ekosistema ir vizualus išskirtinumas.
 
-### Įmantrus santraukas ženkleliams:
+### Santrauka:
 
 **Frontend** : ReactJS - greita, reaguojanti, SPA funkcionalumas
 **Backend** : Node.js + Express - patikima duomenų apdorojimas, komunikacija, logika
