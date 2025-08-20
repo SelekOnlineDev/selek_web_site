@@ -1,7 +1,7 @@
 import nodemailer from "nodemailer";
 import dotenv from "dotenv";
 
-dotenv.config(); // Užtikrina, kad .env kintamieji būtų įkelti
+dotenv.config();
 
 console.log("[emailConfig] EMAIL_USER:", process.env.EMAIL_USER);
 console.log("[emailConfig] EMAIL_PASS:", process.env.EMAIL_PASS ? "EXISTS" : "MISSING");
@@ -17,7 +17,6 @@ const transporter = nodemailer.createTransport({
   }
 });
 
-// Patikrinkime transporterio galimybes
 transporter.verify((error, success) => {
   if (error) {
     console.error("[emailConfig] Transporter verification failed:", error);
