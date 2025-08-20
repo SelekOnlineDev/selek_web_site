@@ -205,6 +205,9 @@ export default function Contacts() {
             <FaPhone /> +370 607 92211
           </ContactItem>
           <ContactItem>
+            <FaPhone /> +62 822 2187 7598
+          </ContactItem>
+          <ContactItem>
             <FaMapMarkerAlt /> {t("contacts.address")}
           </ContactItem>
 
