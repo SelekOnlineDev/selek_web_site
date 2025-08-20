@@ -175,7 +175,7 @@ export default function Contacts() {
       let userMessage = t("contacts.error") || "Error sending message";
       
       if (error.message.includes("Failed to fetch") || error.name === "TypeError") {
-        userMessage = "Network error - check backend";
+        userMessage = "Network error";
       } else if (error.message.includes("HTTP error")) {
         userMessage = `Server error: ${error.message}`;
       }
