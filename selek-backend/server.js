@@ -18,6 +18,7 @@ app.use(cors({
     "http://localhost:5173",
     "http://127.0.0.1:5173",
     "https://selek.site",
+    "https://www.selek.site",
     "http://localhost:5500",
     "http://127.0.0.1:5500"
   ],
