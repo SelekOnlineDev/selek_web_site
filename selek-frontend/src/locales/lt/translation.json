@@ -102,7 +102,7 @@
       {
         "title": "Individuali Žiniatinklio Aplikacija",
         "price": "",
-        "description": "Individualus programinės įrangos kūrimas unikaliems verslo ir asmeninimas poreikiams.",
+        "description": "Individualus programinės įrangos kūrimas unikaliems verslo ir asmeninims poreikiams.",
         "features": [
           "Specializuotas funkcionalumas",
           "Sudėtinga duomenų bazės architektūra",
@@ -126,11 +126,20 @@
     "subject": "Tema",
     "message": "Jūsų Žinutė",
     "transmit": "IŠSIŲSTI DUOMENIS",
+    "sending": "Siunčiama...",
     "success": "Žinutė sėkmingai išsiųsta!",
-    "error": "Klaida siunčiant žinutę"
+    "error": "Klaida siunčiant žinutę",
+    "validation": {
+      "nameRequired": "Vardas privalomas",
+      "emailRequired": "El. paštas privalomas",
+      "emailInvalid": "Neteisingas el. pašto formatas",
+      "subjectRequired": "Tema privaloma",
+      "messageRequired": "Žinutė privaloma",
+      "fixErrors": "Prašome ištaisyti klaidas žemiau"
+    }
   },
   "footer": {
-    "company": "Selek. Skaitmeniniai Kūriniai",
+    "company": "Selek. Skaitmeninė Kūryba",
     "rights": "Visos teisės saugomos."
   }
 }

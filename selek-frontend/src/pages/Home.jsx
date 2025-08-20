@@ -66,6 +66,7 @@ export default function Home() {
 const retroGreen = "#8dfba4";
 
 // Animation for flickering text effect
+
 const flicker = keyframes`
   0%, 18%, 22%, 25%, 53%, 57%, 100% { text-shadow: 0 0 10px ${retroGreen}; }
   20%, 24%, 55% { text-shadow: none; }
@@ -97,7 +98,7 @@ const HeroContent = styled.div`
   font-family: inherit;
   text-align: center;
   padding: 3.5rem 1.5rem;
-  min-width: 300px;
+  min-width: 280px;
   max-width: 1024px;
 
   h1 {

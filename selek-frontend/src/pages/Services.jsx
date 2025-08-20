@@ -10,8 +10,9 @@ import {
   FaPalette,
 } from "react-icons/fa";
 
-/* Inlined MatrixBackground */
-const MatrixBackground = ({ color = "var(--retro-green)" }) => {
+const retroGreen = "#8dfba4";
+
+const MatrixBackground = ({ color = retroGreen }) => {
   const canvasRef = useRef(null);
   const [headerHeight, setHeaderHeight] = useState(0);
 
@@ -98,7 +99,7 @@ export default function Services() {
       icon: <FaLaptopCode />,
       title: t("services.frontend.title"),
       desc: t("services.frontend.desc"),
-      stack: ["ReactJS", "TypeScript", "Tailwind CSS", t("services.frontend.stack.responsive"), t("services.frontend.stack.retro")],
+      stack: ["ReactJS", "Tailwind CSS", t("services.frontend.stack.responsive"), t("services.frontend.stack.retro")],
     },
     {
       icon: <FaDatabase />,
@@ -152,9 +153,9 @@ export default function Services() {
   );
 }
 
-/* STYLES */
+// Animation for flickering text effect
 const flicker = keyframes`
-  0%, 18%, 22%, 25%, 53%, 57%, 100% { text-shadow: 0 0 10px var(--retro-green); }
+  0%, 18%, 22%, 25%, 53%, 57%, 100% { text-shadow: 0 0 10px ${retroGreen}; }
   20%, 24%, 55% { text-shadow: none; }
 `;
 
@@ -179,8 +180,8 @@ const Content = styled.div`
 
 const Title = styled.h2`
   font-family: inherit;
-  color: var(--retro-green);
-  text-shadow: 0 0 10px var(--retro-green);
+  color: ${retroGreen};
+  text-shadow: 0 0 10px ${retroGreen};
   font-size: clamp(1.6rem, 3.5vw, 2.6rem);
   margin-bottom: 1.5rem;
   animation: ${flicker} 2s infinite;
@@ -189,20 +190,20 @@ const Title = styled.h2`
 const Cards = styled.div`
   display: grid;
   gap: 1.25rem;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
 `;
 
 const Card = styled.article`
   background: #000; 
   border-radius: 12px;
   padding: 1.25rem;
-  border: 2px solid var(--retro-green);
-  color: var(--retro-green);
+  border: 2px solid ${retroGreen};
+  color: ${retroGreen};
   font-family: inherit;
   text-align: left;
   display: flex;
   flex-direction: column;
-  min-height: 210px;
+  min-height: 220px;
   transition: transform 0.18s ease, box-shadow 0.18s ease;
 
   &:hover {
@@ -213,14 +214,14 @@ const Card = styled.article`
 
 const Icon = styled.div`
   font-size: 2.1rem;
-  color: var(--retro-green);
+  color: ${retroGreen};
   margin-bottom: 0.6rem;
   display: inline-flex;
   align-items: center;
 `;
 
 const CardTitle = styled.h3`
-  color: var(--retro-green);
+  color: ${retroGreen};
   margin: 0 0 0.45rem 0;
   font-size: 1.05rem;
 `;
@@ -240,8 +241,8 @@ const TechList = styled.div`
 `;
 
 const TechPill = styled.span`
-  border: 1px solid var(--retro-green);
-  color: var(--retro-green);
+  border: 1px solid ${retroGreen};
+  color: ${retroGreen};
   padding: 0.25rem 0.5rem;
   border-radius: 6px;
   font-size: 0.78rem;

@@ -62,7 +62,8 @@ const MatrixBackground = ({ color = "#00ff9f" }) => {
         position: "fixed",
         top: `${headerHeight}px`,
         left: 0,
-        zIndex: -1,
+        zIndex: -10,
+        pointerEvents: "none",
       }}
     />
   );

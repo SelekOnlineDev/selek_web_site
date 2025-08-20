@@ -34,6 +34,7 @@ export default function Offers() {
 }
 
 // Animation for flickering text effect
+
 const flicker = keyframes`
   0%, 18%, 22%, 25%, 53%, 57%, 100% { text-shadow: 0 0 10px ${retroGreen}; }
   20%, 24%, 55% { text-shadow: none; }

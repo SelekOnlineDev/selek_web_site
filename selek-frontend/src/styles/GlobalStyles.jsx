@@ -1,4 +1,3 @@
-// src/styles/GlobalStyles.js
 import { createGlobalStyle } from "styled-components";
 
 const GlobalStyles = createGlobalStyle`
@@ -11,7 +10,6 @@ const GlobalStyles = createGlobalStyle`
 
   html, body, #root { height: 100%; background: #000; }
 
-  /* ✅ Šrifto valdymas vienoje vietoje */
   html[lang="en"] body,
   body.lang-en {
     font-family: "Orbitron", sans-serif;
@@ -40,7 +38,6 @@ const GlobalStyles = createGlobalStyle`
 
   a { color: var(--retro-green); text-decoration: none; }
 
-  /* Viskas paveldi šriftą iš body */
   button, input, select, textarea {
     font-family: inherit;
     border-radius: 8px;

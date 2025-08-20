@@ -126,8 +126,17 @@
     "subject": "Subject",
     "message": "Your Message",
     "transmit": "TRANSMIT DATA",
+    "sending": "Sending...",
     "success": "Message sent successfully!",
-    "error": "Error sending message"
+    "error": "Error sending message",
+    "validation": {
+      "nameRequired": "Name is required",
+      "emailRequired": "Email is required",
+      "emailInvalid": "Invalid email",
+      "subjectRequired": "Subject is required",
+      "messageRequired": "Message is required",
+      "fixErrors": "Please fix the errors below"
+    }
   },
   "footer": {
     "company": "Selek. Digital Excellence",
