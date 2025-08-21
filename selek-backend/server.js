@@ -15,8 +15,7 @@ app.use(express.urlencoded({ extended: true }));
 
 app.use(cors({
   origin: [
-    "https://www.selek.site",
-    "https://selek.site"
+    "https://www.selek.site"
   ],
   methods: ["GET", "POST", "PUT", "OPTIONS", "DELETE"],
   credentials: true,
