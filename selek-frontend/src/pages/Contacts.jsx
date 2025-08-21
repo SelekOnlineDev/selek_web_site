@@ -27,7 +27,7 @@ export default function Contacts() {
   const [touched, setTouched] = useState({});
   const { t, i18n } = useTranslation();
   
-  const apiUrl = import.meta.env.VITE_API_URL || 'http://localhost:5500';
+  const apiUrl = import.meta.env.VITE_API_URL;
 
   const fontFamily =
     i18n.language === "lt"
@@ -35,6 +35,7 @@ export default function Contacts() {
       : '"Orbitron", monospace';
 
   // Form input change handler
+  
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData(prev => ({
