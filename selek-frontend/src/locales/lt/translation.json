@@ -1,6 +1,6 @@
 {
   "nav": {
-    "home": "Pagrindinis",
+    "home": "Paradžia",
     "services": "Paslaugos",
     "offers": "Pasiūlymai",
     "projects": "Projektai",
@@ -125,7 +125,7 @@
     "email": "Jūsų El. Paštas",
     "subject": "Tema",
     "message": "Jūsų Žinutė",
-    "transmit": "IŠSIŲSTI DUOMENIS",
+    "transmit": "SIŲSTI",
     "sending": "Siunčiama...",
     "success": "Žinutė sėkmingai išsiųsta!",
     "error": "Klaida siunčiant žinutę",
