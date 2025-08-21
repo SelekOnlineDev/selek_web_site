@@ -35,7 +35,7 @@ export default function Contacts() {
       : '"Orbitron", monospace';
 
   // Form input change handler
-  
+
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData(prev => ({
@@ -146,6 +146,8 @@ export default function Contacts() {
         },
         body: JSON.stringify(formData),
       };
+
+      console.log(import.meta.env.VITE_API_URL);
 
       const response = await fetch(fullUrl, requestOptions);
 
