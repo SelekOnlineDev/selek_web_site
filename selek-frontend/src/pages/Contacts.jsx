@@ -134,7 +134,7 @@ export default function Contacts() {
     setStatus({ type: 'loading', message: t("contacts.sending") || "Sending..." });
 
     try {
-      const fullUrl = "https://www.selek.site/api/messages";
+      const fullUrl = "https://selek-backend.onrender.com/api/messages";
       
       const requestOptions = {
         method: "POST",
