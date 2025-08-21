@@ -24,8 +24,6 @@ app.use(cors({
   allowedHeaders: ["Content-Type", "Authorization", "Accept"]
 }));
 
-console.log(import.meta.env.VITE_API_URL);
-
 const mongoUri = `mongodb+srv://${process.env.DB_USER}:${process.env.DB_USER_PASSWORD}@${process.env.DB_CLUSTER}.${process.env.DB_CLUSTER_ID}.mongodb.net/${process.env.DB_NAME}?retryWrites=true&w=majority`;
 
 mongoose.connect(mongoUri)
