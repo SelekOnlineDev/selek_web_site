@@ -26,8 +26,6 @@ export default function Contacts() {
   const [errors, setErrors] = useState({});
   const [touched, setTouched] = useState({});
   const { t, i18n } = useTranslation();
-  
-  const apiUrl = import.meta.env.VITE_API_URL;
 
   const fontFamily =
     i18n.language === "lt"
@@ -136,7 +134,7 @@ export default function Contacts() {
     setStatus({ type: 'loading', message: t("contacts.sending") || "Sending..." });
 
     try {
-      const fullUrl = `${apiUrl}/api/messages`;
+      const fullUrl = "https://www.selek.site/api/messages";
       
       const requestOptions = {
         method: "POST",
