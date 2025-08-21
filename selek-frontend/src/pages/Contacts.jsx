@@ -147,9 +147,6 @@ export default function Contacts() {
         body: JSON.stringify(formData),
       };
 
-      console.log(import.meta.env.VITE_API_URL);
-      console.log("VITE_API_URL is →", import.meta.env.VITE_API_URL);
-
       const response = await fetch(fullUrl, requestOptions);
 
       if (!response.ok) {
