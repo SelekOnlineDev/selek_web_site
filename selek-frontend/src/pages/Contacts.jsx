@@ -148,6 +148,7 @@ export default function Contacts() {
       };
 
       console.log(import.meta.env.VITE_API_URL);
+      console.log("VITE_API_URL is →", import.meta.env.VITE_API_URL);
 
       const response = await fetch(fullUrl, requestOptions);
 
