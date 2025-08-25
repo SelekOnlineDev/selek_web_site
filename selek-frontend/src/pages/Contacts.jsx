@@ -201,7 +201,7 @@ export default function Contacts() {
             <FaEnvelope /> info@selek.site
           </ContactItem>
           <ContactItem>
-            <FaPhone /> +370 607 92211 - WhatsApp, Viber.
+            <FaPhone /> +370 607 92211 WhatsApp, Viber
           </ContactItem>
           <ContactItem>
             <FaMapMarkerAlt /> {t("contacts.address")}
