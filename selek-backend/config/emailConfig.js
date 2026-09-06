@@ -1,33 +1,13 @@
-import nodemailer from "nodemailer";
+import { Resend } from "resend";
 import dotenv from "dotenv";
 
 dotenv.config();
 
-console.log("[emailConfig] EMAIL_USER:", process.env.EMAIL_USER);
 console.log(
-  "[emailConfig] EMAIL_PASS:",
-  process.env.EMAIL_PASS ? "EXISTS" : "MISSING"
+  "[emailConfig] RESEND_API_KEY:",
+  process.env.RESEND_API_KEY ? "EXISTS" : "MISSING"
 );
 
-const transporter = nodemailer.createTransport({
-  host: "smtp.gmail.com",
-  port: 465,
-  secure: true,
-  auth: {
-    user: process.env.EMAIL_USER,
-    pass: process.env.EMAIL_PASS,
-  },
-  connectionTimeout: 10000,
-  greetingTimeout: 10000,
-  socketTimeout: 10000,
-});
+const resend = new Resend(process.env.RESEND_API_KEY);
 
-transporter.verify((error, success) => {
-  if (error) {
-    console.error("[emailConfig] Transporter verification failed:", error);
-  } else {
-    console.log("[emailConfig] Transporter is ready to send emails");
-  }
-});
-
-export default transporter;
+export default resend;
