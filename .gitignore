@@ -1,0 +1,25 @@
+# macOS
+.DS_Store
+
+# Environment variables
+.env
+.env.*
+!.env.example
+
+# Secrets / credentials
+*.env
+*password*
+*credentials*
+
+# Dependencies
+node_modules/
+
+# Build output
+dist/
+build/
+
+# Logs
+*.log
+
+# Vite
+.vite/
