@@ -1,42 +1,153 @@
-import dotenv from "dotenv";
-dotenv.config();
+```html
+<!doctype html>
+<html lang="lt">
+  <head>
+    <meta charset="UTF-8" />
 
-import express from "express";
-import mongoose from "mongoose";
-import cors from "cors";
-import messagesRoute from "./routes/messages.js";
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
 
-const app = express();
+    <!-- SEO -->
+    <meta
+      name="description"
+      content="Selek kuria profesionalias interneto svetaines, web aplikacijas ir skaitmeninius sprendimus, pritaikytus verslui ir individualiems projektams. Naudojame šiuolaikines technologijas, kuriame patogų UI/UX ir išskirtinį retro įkvėptą dizainą."
+    />
 
-app.use(express.json());
-app.use(express.urlencoded({ extended: true }));
+    <meta
+      name="robots"
+      content="index, follow"
+    />
 
-// CORS configuration
+    <link
+      rel="canonical"
+      href="https://www.selek.site/"
+    />
 
-app.use(cors({
-  origin: [
-    "https://www.selek.site"
-  ],
-  methods: ["GET", "POST", "PUT", "OPTIONS", "DELETE"],
-  credentials: true,
-  allowedHeaders: ["Content-Type", "Authorization", "Accept"]
-}));
+    <meta
+      name="theme-color"
+      content="#050805"
+    />
 
-// MongoDB connection
+    <!-- Open Graph -->
+    <meta
+      property="og:type"
+      content="website"
+    />
 
-const mongoUri = process.env.MONGODB_URI;
+    <meta
+      property="og:title"
+      content="Selek | Websites, Web Applications & UI/UX Design"
+    />
 
-mongoose.connect(mongoUri)
-  .then(() => console.log("MongoDB connected successfully"))
-  .catch((err) => {
-    console.error("MongoDB connection error:", err);
-    process.exit(1);
-  });
+    <meta
+      property="og:description"
+      content="Selek kuria profesionalias interneto svetaines, web aplikacijas ir skaitmeninius sprendimus, pritaikytus verslui ir individualiems projektams."
+    />
 
-app.use("/api/messages", messagesRoute);
+    <meta
+      property="og:url"
+      content="https://www.selek.site/"
+    />
 
-const PORT = process.env.PORT || 5500;
-app.listen(PORT, () => {
-  console.log(`Server running on port ${PORT}`);
-  console.log(`Test URL: http://localhost:${PORT}/api/test`);
-});
+    <meta
+      property="og:image"
+      content="https://www.selek.site/SelekLogo.png"
+    />
+
+    <meta
+      property="og:image:alt"
+      content="Selek logo"
+    />
+
+    <meta
+      property="og:site_name"
+      content="Selek"
+    />
+
+    <meta
+      property="og:locale"
+      content="lt_LT"
+    />
+
+    <!-- Twitter / X -->
+    <meta
+      name="twitter:card"
+      content="summary"
+    />
+
+    <meta
+      name="twitter:title"
+      content="Selek | Websites, Web Applications & UI/UX Design"
+    />
+
+    <meta
+      name="twitter:description"
+      content="Selek kuria profesionalias interneto svetaines, web aplikacijas ir skaitmeninius sprendimus, pritaikytus verslui ir individualiems projektams."
+    />
+
+    <meta
+      name="twitter:image"
+      content="https://www.selek.site/SelekLogo.png"
+    />
+
+    <meta
+      name="twitter:image:alt"
+      content="Selek logo"
+    />
+
+    <!-- Favicon -->
+    <link
+      rel="icon"
+      type="image/png"
+      href="/SelekLogo.png"
+    />
+
+    <link
+      rel="apple-touch-icon"
+      href="/SelekLogo.png"
+    />
+
+    <!-- Page Title -->
+    <title>Selek | Websites, Web Applications & UI/UX Design</title>
+
+    <!-- Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Selek",
+        "url": "https://www.selek.site/",
+        "logo": "https://www.selek.site/SelekLogo.png",
+        "description": "Selek kuria profesionalias interneto svetaines, web aplikacijas ir skaitmeninius sprendimus, pritaikytus verslui ir individualiems projektams.",
+        "sameAs": [
+          "https://github.com/SelekOnlineDev",
+          "https://www.linkedin.com/company/selekonlineworld/",
+          "https://www.instagram.com/selek_online_world/"
+        ]
+      }
+    </script>
+  </head>
+
+  <body>
+    <div id="root"></div>
+
+    <script
+      type="module"
+      src="/src/main.jsx"
+    ></script>
+  </body>
+</html>
+```
