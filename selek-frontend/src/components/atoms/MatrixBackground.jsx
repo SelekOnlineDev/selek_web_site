@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 
-const MatrixBackground = ({ color = "#00ff9f" }) => {
+const MatrixBackground = ({ color = "#33FF77" }) => {
   const canvasRef = useRef(null);
   const [headerHeight, setHeaderHeight] = useState(0);
 

@@ -2,7 +2,7 @@ import { createGlobalStyle } from "styled-components";
 
 const GlobalStyles = createGlobalStyle`
   :root {
-    --retro-green: #8DFBA4;
+    --retro-green: #33FF77;
     --header-height: 65px;
   }
 

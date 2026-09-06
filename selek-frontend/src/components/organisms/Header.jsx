@@ -10,7 +10,7 @@ const HeaderWrapper = styled.header`
   left: 0;
   width: 100%;
   background: rgba(0, 0, 0, 0.4);
-  border-bottom: 2px solid #8dfba4;
+  border-bottom: 2px solid #33FF77;
   backdrop-filter: blur(3px);
   z-index: 100;
 `;
@@ -28,7 +28,7 @@ const Nav = styled.nav`
 
   h1 { 
     font-size: 1.5rem; 
-    color: #8dfba4; 
+    color: #33FF77; 
     cursor: pointer; 
     user-select: none;
   }
@@ -46,7 +46,7 @@ const Nav = styled.nav`
       background: rgba(0, 0, 0, 0.9);
       padding: 1.25rem;
       width: 200px;
-      border-left: 2px solid #8dfba4;
+      border-left: 2px solid #33FF77;
       transform: translateX(100%) scale(1.15);
       opacity: 0;
       transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
@@ -57,7 +57,7 @@ const Nav = styled.nav`
   }
 
   li a { 
-    color: #8dfba4; 
+    color: #33FF77; 
     text-decoration: none; 
     cursor: pointer; 
     transition: color 0.2s ease-in-out;
@@ -71,8 +71,8 @@ const Nav = styled.nav`
     gap: 0.5rem;
     button {
       background: rgba(0, 0, 0, 0.4);
-      border: 1px solid #8dfba4;
-      color: #8dfba4;
+      border: 1px solid #33FF77;
+      color: #33FF77;
       font-family: inherit;
       padding: 0.3rem 0.6rem;
       cursor: pointer;
@@ -96,7 +96,7 @@ const Nav = styled.nav`
 
   .menu-icon {
     display: none; 
-    color: #8dfba4; 
+    color: #33FF77; 
     font-size: 2rem;
     cursor: pointer;
     @media (max-width: 758px) { display: block; }

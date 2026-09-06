@@ -63,7 +63,7 @@ export default function Home() {
   );
 }
 
-const retroGreen = "#8dfba4";
+const retroGreen = "#33FF77";
 
 // Animation for flickering text effect
 

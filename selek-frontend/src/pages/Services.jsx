@@ -10,7 +10,7 @@ import {
   FaPalette,
 } from "react-icons/fa";
 
-const retroGreen = "#8dfba4";
+const retroGreen = "#33FF77";
 
 const MatrixBackground = ({ color = retroGreen }) => {
   const canvasRef = useRef(null);
@@ -93,37 +93,37 @@ export default function Services() {
       icon: <FaGlobe />,
       title: t("services.webdev.title"),
       desc: t("services.webdev.desc"),
-      stack: ["ReactJS", "NodeJS", "HTML", "CSS", "JavaScript", "TypeScript"],
+      stack: ["ReactJS", "NodeJS", "HTML", "CSS", "JavaScript", t("services.webdev.stack.ai")],
     },
     {
       icon: <FaLaptopCode />,
       title: t("services.frontend.title"),
       desc: t("services.frontend.desc"),
-      stack: ["ReactJS", "Tailwind CSS", t("services.frontend.stack.responsive"), t("services.frontend.stack.retro")],
+      stack: ["UI/UX", t("services.frontend.stack.responsive"), t("services.frontend.stack.retro"), "Frontend"],
     },
     {
       icon: <FaDatabase />,
       title: t("services.backend.title"),
       desc: t("services.backend.desc"),
-      stack: ["NodeJS", "SQL", "NoSQL", "REST APIs", "ExpressJS"],
+      stack: ["NodeJS", "Databases", "Cloud", "SQL/NoSQL", "API", "Backend"],
     },
     {
       icon: <FaMobileAlt />,
       title: t("services.mobile.title"),
       desc: t("services.mobile.desc"),
-      stack: [t("services.mobile.stack.responsive"), "PWA", t("services.mobile.stack.optimization"), "App Dev"],
+      stack: [t("services.mobile.stack.optimization"), "App Dev", t("services.mobile.stack.performance"), t("services.mobile.stack.platform")],
     },
     {
       icon: <FaBolt />,
       title: t("services.performance.title"),
       desc: t("services.performance.desc"),
-      stack: [t("services.performance.stack.tuning"), "SEO", t("services.performance.stack.optimization")],
+      stack: [t("services.performance.stack.tuning"), "SEO", t("services.performance.stack.optimization"), t("services.performance.stack.ai")],
     },
     {
       icon: <FaPalette />,
-      title: t("services.design.title"),
-      desc: t("services.design.desc"),
-      stack: [t("services.design.stack.logo"), t("services.design.stack.brand"), t("services.design.stack.visual"), t("services.design.stack.ai")],
+      title: t("services.hosting.title"),
+      desc: t("services.hosting.desc"),
+      stack: [t("services.hosting.stack.hosting"),t("services.hosting.stack.maintenance"), t("services.hosting.stack.support"), t("services.hosting.stack.domain")],
     },
   ];
 
@@ -227,7 +227,7 @@ const CardTitle = styled.h3`
 `;
 
 const CardDesc = styled.p`
-  color: rgba(141, 251, 164, 0.9);
+  color: "#33FF77";
   font-size: 0.92rem;
   line-height: 1.45;
   margin: 0 0 0.9rem 0;

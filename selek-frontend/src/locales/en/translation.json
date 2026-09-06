@@ -8,51 +8,56 @@
   },
   "home": {
     "title": "Crafting Digital Excellence",
-    "description": "Your main terminal for professional web development services. We build pixel-perfect solutions in a retro style. From command-line interfaces to full applications - we turn your vision into reality.",
-    "cta": "Contact Us"
+    "description": "We design and develop modern websites and web applications that combine thoughtful design, powerful technology, and AI-driven solutions to help businesses grow online",
+    "cta": "Start Your Project"
   },
   "services": {
     "title": "Services",
     "webdev": {
-      "title": "Website Design & Development",
-      "desc": "Custom websites built with modern technologies like React, HTML, CSS, JavaScript or TypeScript. From static websites to full-stack applications, we code with precision and performance in mind."
+      "title": "Websites & Web Apps",
+      "desc": "Modern websites and web apps designed around your business, your audience, and your goals. From a polished company website to a powerful custom web application, we create fast, responsive digital products built to make an impact.",
+      "stack": {
+        "ai": "AI Integration"
+      }
     },
     "frontend": {
-      "title": "Frontend Development & UI/UX Design",
-      "desc": "Interactive and responsive user interfaces with a retro terminal feel. Pixel-perfect, designed to engage your users.",
+      "title": "User Interfaces & UI/UX",
+      "desc": "Clean and intuitive interfaces that make your website or web app simple and enjoyable to use. Thoughtful design, smooth interactions, and responsive layouts create a great experience on any device.",
       "stack": {
         "responsive": "Responsive Design",
-        "retro": "Retro Style"
+        "retro": "Modern CSS"
       }
     },
     "backend": {
-      "title": "Backend Development",
-      "desc": "Robust server-side solutions with database integration and API development. Hosting websites on paid and free servers."
+      "title": "APIs & Databases",
+      "desc": "Everything behind the scenes that makes your website or web app work. We handle data, user accounts, integrations, and the systems that keep your digital product reliable, secure, and ready."
     },
     "mobile": {
       "title": "Mobile-First Design",
-      "desc": "Websites optimized for mobile devices with touch-friendly interfaces, responsive and fast.",
+      "desc": "Websites and web apps built for mobile devices, with fast loading, touch-friendly user interfaces, and a smooth experience on every screen.",
       "stack": {
-        "responsive": "Responsive Design",
-        "optimization": "Mobile Optimization"
+        "optimization": "Mobile Optimization",
+        "performance": "Performance",
+        "platform": "Touch-Friendly UI"
       }
     },
     "performance": {
       "title": "Performance Optimization",
-      "desc": "Fast-loading websites with optimized code and modern practices.",
+      "desc": "Fast websites and web apps with optimized code, better performance, and modern technologies. AI integrations can add smarter features and improve your digital online performance.",
       "stack": {
         "tuning": "Performance Tuning",
-        "optimization": "Code Optimization"
+        "optimization": "Code Optimization",
+        "ai": "AI Integration"
       }
     },
-    "design": {
-      "title": "Logo Creation & Design",
-      "desc": "Professional logo design and brand identity creation.",
+    "hosting": {
+      "title": "Hosting, Domains & Support",
+      "desc": "Reliable hosting, domain management, and ongoing website support. We keep your website online, up to date, secure, and running smoothly after launch.",
       "stack": {
-        "logo": "Logo Design",
-        "brand": "Brand Identity",
-        "visual": "Visual Design",
-        "ai": "AI Design"
+        "hosting": "Web Hosting",
+        "maintenance": "Web Maintenance",
+        "support": "Technical Support",
+        "domain": "Domain"
       }
     }
   },
@@ -63,53 +68,53 @@
       {
         "title": "Basic Website Package",
         "price": "",
-        "description": "Essential web presence for startups and personal projects in retro style and modern functionality.",
+        "description": "A professional website for small businesses, startups, or personal projects. Everything you need for a strong and reliable online presence.",
         "features": [
           "5-10 pages website",
           "Responsive design",
           "Basic SEO optimization",
           "Contact form integration",
-          "1-2 month post-launch support",
-          "Retro design elements"
+          "Fast and efficient performance",
+          "1-2 month post-launch support"
         ]
       },
       {
         "title": "Business Website Solution",
         "price": "",
-        "description": "Comprehensive solution for growing businesses needing dynamic content.",
+        "description": "A more complete and professional website for growing businesses that need better content, visibility, and a seamless customer experience.",
         "features": [
           "10-20 pages website",
           "Advanced SEO strategies",
+          "Dynamic content and management",
           "Social media integration",
-          "3 months dedicated support",
           "Analytics and reporting setup",
-          "Retro design for free"
+          "3-4 months dedicated support"
         ]
       },
       {
         "title": "E-commerce Platform",
         "price": "",
-        "description": "Full-featured online store with secure payment processing.",
+        "description": "A complete online store built to make managing products, orders, and customer purchases simple and efficient.",
         "features": [
           "Product catalog management",
-          "Shopping cart functionality",
-          "Payment gateway integration",
+          "Shopping cart system",
+          "Secure payment integrations",
           "Order and inventory management",
           "Customer account system",
-          "3-6 months priority support"
+          "3-6 months of priority support and maintenance"
         ]
       },
       {
         "title": "Custom Web Application",
         "price": "",
-        "description": "Tailored software development for unique business and personal requirements.",
+        "description": "A custom digital solution for businesses and projects that need more than a standard website can offer.",
         "features": [
-          "Bespoke functionality",
-          "Complex database architecture",
+          "Custom-built functionality",
+          "Database and data management",
           "Secure user authentication",
-          "Intuitive admin panel",
-          "API development and integration",
-          "Ongoing maintenance and updates"
+          "Easy-to-use admin panel",
+          "API and third-party AI integrations",
+          "Ongoing maintenance, updates, and development"
         ]
       }
     ]
@@ -125,7 +130,7 @@
     "email": "Your Email",
     "subject": "Subject",
     "message": "Your Message",
-    "transmit": "TRANSMIT DATA",
+    "transmit": "SENT",
     "sending": "Sending...",
     "success": "Message sent successfully!",
     "error": "Error sending message",
@@ -140,6 +145,6 @@
   },
   "footer": {
     "company": "Selek. Digital Excellence",
-    "rights": "All rights reserved."
+    "rights": "All rights reserved"
   }
 }

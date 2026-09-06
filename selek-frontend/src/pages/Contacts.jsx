@@ -12,7 +12,7 @@ import {
 } from "react-icons/fa";
 import MatrixBackground from "../components/atoms/MatrixBackground";
 
-const retroGreen = "#8DFBA4";
+const retroGreen = "#33FF77";
 
 export default function Contacts() {
   const [formData, setFormData] = useState({
@@ -453,7 +453,7 @@ const StyledField = styled.input`
   font-size: 0.95rem;
 
   &::placeholder {
-    color: ${(props) => (props.$error ? "#8DFBA4" : retroGreen)};
+    color: ${(props) => (props.$error ? "#33FF77" : retroGreen)};
   }
 
   &:focus {
@@ -495,7 +495,7 @@ const StyledTextarea = styled.textarea`
   font-family: inherit;
 
   &::placeholder {
-    color: ${(props) => (props.$error ? "#8DFBA4" : retroGreen)};
+    color: ${(props) => (props.$error ? "#33FF77" : retroGreen)};
   }
 
   &:focus {
@@ -567,9 +567,9 @@ const StatusMessage = styled.p`
   font-size: 0.9rem;
   margin: 0;
   color: ${props => 
-    props.$type === 'success' ? '#8DFBA4' : 
-    props.$type === 'error' ? '#fff' : 
-    '#8DFBA4'};
+    props.$type === 'success' ? '#33FF77' : 
+    props.$type === 'error' ? '#F1FFF5' : 
+    '#33FF77'};
   
   @media (max-width: 628px) {
     width: 100%;

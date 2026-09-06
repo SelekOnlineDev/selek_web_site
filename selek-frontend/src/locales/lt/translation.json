@@ -8,51 +8,56 @@
   },
   "home": {
     "title": "Skaitmeninė Kūryba",
-    "description": "Jūsų pagrindinis terminalas profesionalioms interneto kūrimo paslaugoms. Kuriame preciziškus sprendimus retro stiliumi. Nuo komandinių eilučių sąsajų iki pilnų aplikacijų - paversime jūsų viziją realybe.",
-    "cta": "SUSISIEKITE"
+    "description": "Modernios interneto svetainės bei web aplikacijos, kuriose šiuolaikinis dizainas derinamas su pažangiomis technologijomis ir AI sprendimais, padedančiais jums augti",
+    "cta": "Kurkime kartu"
   },
   "services": {
     "title": "Paslaugos",
     "webdev": {
-      "title": "Svetainių Kūrimas Ir Programavimas",
-      "desc": "Individualios svetainės sukurtos naudojant modernias technologijas, tokias kaip React, HTML, CSS, JavaScript ar TypeScript. Nuo statinių puslapių iki pilnų aplikacijų - viskas tiksliai ir našiai."
+      "title": "Svetainės ir Web Aplikacijos",
+      "desc": "Modernios svetainės ir web aplikacijos, sukurtos pagal jūsų verslą, auditoriją ir tikslus. Nuo profesionalios įmonės svetainės iki individualios web aplikacijos - kuriame greitus, patogius ir išskirtinius skaitmeninius produktus.",
+      "stack": {
+        "ai": "AI Integracija"
+      }
     },
     "frontend": {
-      "title": "Frontend Kūrimas Ir UI/UX Dizainas",
-      "desc": "Interaktyvios ir reaguojančios sąsajos su retro terminalo stiliumi. Pikselių tikslumu sukurtos, kad įtrauktų vartotojus.",
+      "title": "Vartotojo Sąsajos ir UI/UX",
+      "desc": "Aiškios ir patogios sąsajos, kad jūsų svetaine ar web aplikacija būtų paprasta ir malonu naudotis. Tvarkingas dizainas, sklandus veikimas ir prisitaikymas prie skirtingų ekranų užtikrina gerą patirtį bet kuriame įrenginyje.",
       "stack": {
         "responsive": "Prisitaikantis Dizainas",
-        "retro": "Retro Stilius"
+        "retro": "Modernus CSS"
       }
     },
     "backend": {
-      "title": "Backend Kūrimas",
-      "desc": "Patikimi serverių sprendimai su duomenų bazių integracija ir API kūrimu. Svetainių talpinimas mokamuose ir nemokamuose serveriuose."
+      "title": "API ir Duomenų Bazės",
+      "desc": "Visa tai, kas vyksta už jūsų svetainės ar aplikacijos ekrano. Duomenys, vartotojų paskyros, integracijos ir kitos svarbios funkcijos veikia kartu, kad jūsų produktas būtų patikimas, saugus ir paruoštas."
     },
     "mobile": {
       "title": "Mobile-First Dizainas",
-      "desc": "Svetainės optimizuotos mobiliesiems įrenginiams su patogiomis sąsajomis. Greitos ir pritaikytos bet kokiam ekranui.",
+      "desc": "Svetainės ir web aplikacijos pritaikytos telefonams bei kitiems įrenginiams. Greitas veikimas, patogus valdymas ir sklandi patirtis bet kuriame ekrane.",
       "stack": {
-        "responsive": "Prisitaikantis Dizainas",
-        "optimization": "Mobilioji Optimizacija"
+        "optimization": "Mobilioji Optimizacija",
+        "performance": "Našumas",
+        "platform": "Patogus Valdymas"
       }
     },
     "performance": {
       "title": "Našumo Optimizavimas",
-      "desc": "Greitai įkeliamos svetainės su optimizuotu kodu ir šiuolaikinėmis praktikomis.",
+      "desc": "Greitos ir efektyvios svetainės bei web aplikacijos su optimizuotu kodu ir šiuolaikinėmis technologijomis. AI integracijos leidžia pridėti išmanes funkcijas ir pagerinti programų veikimą.",
       "stack": {
         "tuning": "Našumo Derinimas",
-        "optimization": "Kodo Optimizacija"
+        "optimization": "Kodo Optimizacija",
+        "ai": "AI Integration"
       }
     },
-    "design": {
-      "title": "Logotipų Kūrimas Ir Dizainas",
-      "desc": "Profesionalus logotipų kūrimas ir prekinio ženklo identiteto formavimas.",
+    "hosting": {
+      "title": "Hostingas ir Servisas",
+      "desc": "Patikimas svetainės talpinimas, domenų tvarkymas ir nuolatinė priežiūra. Prižiūrime, kad svetainė veiktų, būtų atnaujinta, saugi ir pasiekiama po paleidimo.",
       "stack": {
-        "logo": "Logotipų Dizainas",
-        "brand": "Prekinio Ženklo Identitetas",
-        "visual": "Vizualinis Dizainas",
-        "ai": "DI Dizainas"
+        "hosting": "Hostingas",
+        "maintenance": "Priežiūra",
+        "support": "Techninis palaikymas",
+        "domain": "Domenai"
       }
     }
   },
@@ -63,53 +68,53 @@
       {
         "title": "Pagrindinis Svetainės Paketas",
         "price": "",
-        "description": "Interneto svetainės ir mažiems verslams ir startuoliams ir asmeniniams projektams su retro stiliumi ir moderniu funkcionalumu.",
+        "description": "Profesionali interneto svetainė mažam verslui, startuoliui ar asmeniniam projektui. Viskas, ko reikia stipriam ir patikimam startui internete.",
         "features": [
           "5-10 puslapių svetainė",
           "Prisitaikantis dizainas",
           "Pagrindinė SEO optimizacija",
           "Kontaktų formos integracija",
-          "1-2 mėnesių palaikymas po paleidimo",
-          "Retro dizaino elementai"
+          "Greitas ir našus veikimas",
+          "1-2 mėnesių palaikymas ir priežiūra"
         ]
       },
       {
         "title": "Verslo Svetainės Sprendimas",
         "price": "",
-        "description": "Išsamus sprendimas augančioms įmonėms ar asmeniniams projektams, kuriems reikia dinaminio turinio.",
+        "description": "Išsami ir profesionali svetainė augančiam verslui, kuriam svarbus turinys, matomumas, kokybė ir patogi klientų patirtis.",
         "features": [
           "10-20 puslapių svetainė",
-          "Pažangios SEO strategijos",
+          "Išplėstinė SEO optimizacija",
+          "Dinaminis turinys ir jo valdymas",
           "Socialinių tinklų integracija",
-          "3 mėnesių palaikymas ir priežiūra",
           "Analitikos ir ataskaitų paruošimas",
-          "Retro dizainas nemokamai"
+          "3-4 mėnesių palaikymas ir priežiūra"
         ]
       },
       {
         "title": "Elektroninės Parduotuvės Platforma",
         "price": "",
-        "description": "Pilnai funkcionuojanti internetinė parduotuvė su saugiu mokėjimų apdorojimu.",
+        "description": "Pilnai paruošta elektroninė parduotuvė, skirta patogiai valdyti produktus, užsakymus ir klientų apsipirkimą.",
         "features": [
           "Produktų katalogo valdymas",
-          "Pirkinių krepšelio funkcionalumas",
-          "Mokėjimo integracija",
+          "Pirkinių krepšelio sistema",
+          "Saugus mokėjimų integravimas",
           "Užsakymų ir atsargų valdymas",
-          "Klientų paskyrų sistemų valdymas",
+          "Klientų paskyrų valdymas",
           "3-6 mėnesių prioritetinis palaikymas ir priežiūra"
         ]
       },
       {
-        "title": "Individuali Žiniatinklio Aplikacija",
+        "title": "Individuali Web Aplikacija",
         "price": "",
-        "description": "Individualus programinės įrangos kūrimas unikaliems verslo ir asmeninims poreikiams.",
+        "description": "Individualus skaitmeninis sprendimas verslui ar projektui, kuriam standartinės svetainės galimybių nepakanka.",
         "features": [
-          "Specializuotas funkcionalumas",
-          "Sudėtinga duomenų bazės architektūra",
-          "Saugus vartotojų autentifikavimas",
-          "Intuityvi administratoriaus sąsaja",
-          "API kūrimas ir integracija",
-          "Nuolatinė priežiūra ir atnaujinimai"
+          "Individualiai pritaikytos funkcijos",
+          "Duomenų bazių ir valdymo sistema",
+          "Saugus vartotojų prisijungimas",
+          "Patogi administravimo sistema",
+          "API ir išorinių AI paslaugų integracijos",
+          "Nuolatinė priežiūra, atnaujinimai ir plėtra"
         ]
       }
     ]
@@ -140,6 +145,6 @@
   },
   "footer": {
     "company": "Selek. Skaitmeninė Kūryba",
-    "rights": "Visos teisės saugomos."
+    "rights": "Visos teisės saugomos"
   }
 }
