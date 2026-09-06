@@ -4,7 +4,10 @@ import dotenv from "dotenv";
 dotenv.config();
 
 console.log("[emailConfig] EMAIL_USER:", process.env.EMAIL_USER);
-console.log("[emailConfig] EMAIL_PASS:", process.env.EMAIL_PASS ? "EXISTS" : "MISSING");
+console.log(
+  "[emailConfig] EMAIL_PASS:",
+  process.env.EMAIL_PASS ? "EXISTS" : "MISSING"
+);
 
 const transporter = nodemailer.createTransport({
   host: "smtp.gmail.com",
