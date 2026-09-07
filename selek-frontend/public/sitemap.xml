@@ -4,15 +4,7 @@
   <!-- Main -->
   <url>
     <loc>https://www.selek.site/</loc>
-    <lastmod>2025-09-06</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>1.0</priority>
-  </url>
-
-  <!-- Home -->
-  <url>
-    <loc>https://www.selek.site/home</loc>
-    <lastmod>2025-09-06</lastmod>
+    <lastmod>2026-09-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
@@ -20,7 +12,7 @@
   <!-- Services -->
   <url>
     <loc>https://www.selek.site/services</loc>
-    <lastmod>2025-09-06</lastmod>
+    <lastmod>2026-09-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
@@ -28,7 +20,7 @@
   <!-- Offers -->
   <url>
     <loc>https://www.selek.site/offers</loc>
-    <lastmod>2025-09-06</lastmod>
+    <lastmod>2026-09-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
@@ -36,7 +28,7 @@
   <!-- Contacts -->
   <url>
     <loc>https://www.selek.site/contacts</loc>
-    <lastmod>2025-09-06</lastmod>
+    <lastmod>2026-09-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>

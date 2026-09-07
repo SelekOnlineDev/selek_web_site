@@ -10,7 +10,7 @@ import {
   FaPalette,
 } from "react-icons/fa";
 
-const retroGreen = "#33FF77";
+const retroGreen = "#72E890";
 
 const MatrixBackground = ({ color = retroGreen }) => {
   const canvasRef = useRef(null);
@@ -227,7 +227,7 @@ const CardTitle = styled.h3`
 `;
 
 const CardDesc = styled.p`
-  color: "#33FF77";
+  color: "#72E890";
   font-size: 0.92rem;
   line-height: 1.45;
   margin: 0 0 0.9rem 0;

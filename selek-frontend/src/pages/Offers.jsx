@@ -3,7 +3,7 @@ import styled, { keyframes } from "styled-components";
 import MatrixBackground from "../components/atoms/MatrixBackground";
 import { useTranslation } from "react-i18next";
 
-const retroGreen = "#33FF77";
+const retroGreen = "#72E890";
 
 export default function Offers() {
   const { t } = useTranslation();
@@ -120,7 +120,7 @@ const Price = styled.p`
 `;
 
 const CardDesc = styled.p`
-  color: "#33FF77";
+  color: "#72E890";
   font-size: 0.92rem;
   line-height: 1.45;
   margin: 0 0 0.9rem 0;
